@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView imageViewDice;
     private Random rng = new Random();
     private TextView one;
-    private TextView two;
+    //private TextView two;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private void rollDice() {
         int randomNumber = rng.nextInt(20) + 1;
         one = (TextView) findViewById(R.id.textView);
-        two = (TextView) findViewById(R.id.textView2);
+        //two = (TextView) findViewById(R.id.textView2);
 
         one.setText(R.string.empty);
         //two.setText(R.string.empty);
